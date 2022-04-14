@@ -1,0 +1,107 @@
+/*TOP*/
+h1 {
+    font-size: 2em;
+}
+
+.content {
+    margin: 100px 0;
+}
+
+.wrapper {
+    max-width: 980px;
+    width: calc(100% - 44px);
+    margin: 0 auto;
+    padding: 0 22px;
+    height: 100%;
+}
+
+.main {
+    background-image: url(../images/main_img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 440px;
+    max-height: 600px;
+    height: 70vh;
+    position: relative;
+    &__text {
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 18rem;
+        &-h1 {
+        margin-left: -20px;
+        }
+        &-p {
+            margin-top: -10px;
+        }
+    }
+}
+
+header {
+    padding: 30px 0;
+    @include clearfix;
+}
+.menu {
+    float: right;
+    &__item {
+        float: left;
+        margin-left: 16px;
+    }
+}
+.ttl {
+    position: relative;
+    width: 150px;
+    text-align: right;
+    border-bottom: 2px solid #c21500;
+    border-image: linear-gradient(to right, #00ad00 0%, #6de3fc 50%, #9464fe 100%);
+    border-image-slice: 1;
+    &::before {
+        position: absolute;
+        width: 500px;
+        content: "";
+        bottom: -2px;
+        left: -500px;
+        border-bottom: 2px solid #c21500;
+        border-image: linear-gradient(to left, #00ad00 0%, #6de3fc 50%, #9464fe 100%);
+        border-image-slice: 1;
+
+    }
+}
+
+#about {
+
+}
+.about {
+    &__contents {
+        @include clearfix;
+        .box-left {
+            float: left;
+        }
+        .box-right {
+            float: right;
+        }
+    }
+    &__contents-01 {
+        background-image: url("../images/about_bg01.png");
+        background-position: right top -100px;
+        background-repeat: no-repeat;
+    }
+    &__contents-02 {
+        margin-top: 150px;
+        background-image: url("../images/about_bg02.png");
+        background-position: left top -100px;
+        background-repeat: no-repeat;
+        text-align: right;
+    }
+    h3 {
+        font-size: 6rem;
+        margin-top: 170px;
+    }
+    .h3-caption {
+        margin-top: 42px;
+        font-size: 2.2rem;
+    }
+}
+

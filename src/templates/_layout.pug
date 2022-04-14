@@ -1,0 +1,15 @@
+doctype html
+
+block locals
+    - var title = 'ARPR | Self-introduction of a new era using AR';
+
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title #{title}
+    body
+        .container
+            block content
+            .footer
+                | &copy; 2022 ARPR.

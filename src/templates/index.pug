@@ -1,0 +1,48 @@
+extends _layout.pug
+
+block locals
+
+block content
+    .main
+        .wrapper
+            include _menu.pug
+            .main__text
+                h1.main__text-h1
+                    img(src="../images/main_title.png", alt="ARPR")
+                p.main__text-p
+                    img(src="../images/main_title_txt.png", alt="Self-introduction of a new era using AR")
+    section#about
+        .about
+            .content
+                .about__contents.about__contents-01
+                    .wrapper
+                        .ttl
+                            h2
+                                img(src="../images/ttl_about.png")
+                        .box-left
+                            h3
+                                |他にはない<br>魅力的なAR動画
+                            p.h3-caption
+                                |ありきたりな動画から卒業しよう
+                        .box-right
+                            img(src="../images/iphone13.png")
+                .about__contents.about__contents-02
+                    .wrapper
+                        .box-left
+                            img(src="../images/iphone13.png")
+                        .box-right
+                            h3
+                                |動画制作を<br>もっと手軽に
+                            p.h3-caption
+                                |ARなんて難しい？<br>拡張現実は君の手で生み出すんだ。
+    //- section#usage
+    //-     .usage
+    //-         .content.wrapper
+    //-             .ttl
+    //-                 h2
+    //-                     img(src="../images/ttl_usage.png")
+    //-             .box-left
+    //-                 h3
+    //-                     |registration
+    //-                 div.video
+    //-                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Ny_KZJwF5NA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
