@@ -8,7 +8,7 @@ module.exports = {
     devtool: 'source-map',
     entry: './src/javascripts/main.js',
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './docs'),
         filename: 'javascripts/[name]-[contenthash].js',
         publicPath: '/',
     },
@@ -105,8 +105,8 @@ module.exports = {
             filename: 'index.html',
         }),
         new HtmlWebpackPlugin({
-            template: './src/templates/access.pug',
-            filename: 'access.html',
+            template: './src/templates/privacypolicy.pug',
+            filename: 'privacypolicy.html',
         }),
         new CleanWebpackPlugin(),
     ],
